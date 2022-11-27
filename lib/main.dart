@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
                     height: 100,
                     width: 100,
                     color: Colors.black,
-                    child: Center(child: const Text("Containe 4")),
+                    child: Center(child: const Text("Containe 4",style:TextStyle(color: Colors.white),)),
                   ),
                 ],
               ),
@@ -54,7 +54,7 @@ class MyApp extends StatelessWidget {
                   height: 100,
                   width: 100,
                   color: Colors.purple,
-                  child: const Text("Containe 4"),
+                  child: Center(child: const Text("Containe 4")),
                 ),
               ],
             ),
@@ -64,13 +64,13 @@ class MyApp extends StatelessWidget {
                   height: 100,
                   width: 100,
                   color: Colors.yellow,
-                  child: const Text("Containe 5"),
+                  child: Center(child: const Text("Containe 5")),
                 ),
                 Container(
                   height: 100,
                   width: 100,
                   color: Colors.red,
-                  child: const Text("Containe 6"),
+                  child: Center(child: const Text("Containe 6")),
                 ),
               ],
             ),
@@ -80,19 +80,19 @@ class MyApp extends StatelessWidget {
                   height: 100,
                   width: 100,
                   color: Colors.red[200],
-                  child: const Text("Containe 7"),
+                  child: Center(child: const Text("Containe 7")),
                 ),
                 Container(
                   height: 100,
                   width: 100,
                   color: Colors.yellow[400],
-                  child: const Text("Containe 8"),
+                  child: Center(child: const Text("Containe 8")),
                 ),
                 Container(
                   height: 100,
                   width: 100,
                   color: Colors.grey[400],
-                  child: const Text("Containe 9"),
+                  child: Center(child: const Text("Containe 9")),
                 ),
               ],
             ),
@@ -102,3 +102,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
