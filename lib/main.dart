@@ -17,27 +17,36 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           children: [
-            Row(
-              children: [
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.yellow,
-                  child: const Text("Containe 1"),
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.red,
-                  child: const Text("Containe 2"),
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.grey[400],
-                  child: const Text("Containe 3"),
-                ),
-              ],
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.yellow,
+                    child: Center(child: const Text("Containe 1")),
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.red,
+                    child: Center(child: const Text("Containe 2")),
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.grey[400],
+                    child: Center(child: const Text("Containe 3")),
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.black,
+                    child: Center(child: const Text("Containe 4")),
+                  ),
+                ],
+              ),
             ),
             Row(
               children: [
@@ -47,7 +56,6 @@ class MyApp extends StatelessWidget {
                   color: Colors.purple,
                   child: const Text("Containe 4"),
                 ),
-                
               ],
             ),
             Row(
